@@ -15,6 +15,7 @@ class NoteListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         writeNoteButton.layer.setShadow()
         noteListCollectionView.delegate = self
         noteListCollectionView.dataSource = self
@@ -26,7 +27,13 @@ class NoteListViewController: UIViewController {
         noteListCollectionView.reloadData()
     }
 
-
+    @IBAction func writeNote(_ sender: Any) {
+        let noteVC = self.storyboard?.instantiateViewController(withIdentifier: "noteVC")
+        self.navigationController?.pushViewController(noteVC!, animated: true)
+        
+    }
+    
+    
 }
 
 extension NoteListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
