@@ -21,6 +21,8 @@
 		740A42D723F92CAE000E64A4 /* NoteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A42D623F92CAE000E64A4 /* NoteListViewController.swift */; };
 		740A42DB23F92DBF000E64A4 /* NoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740A42DA23F92DBF000E64A4 /* NoteManager.swift */; };
 		74A8282923F94B1D0052D7B0 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A8282823F94B1D0052D7B0 /* CALayer.swift */; };
+		74C683AB23FF62790085D0E2 /* JSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C683AA23FF62790085D0E2 /* JSTextView.swift */; };
+		74C683AD23FF96800085D0E2 /* NoteImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C683AC23FF96800085D0E2 /* NoteImageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		740A42D623F92CAE000E64A4 /* NoteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewController.swift; sourceTree = "<group>"; };
 		740A42DA23F92DBF000E64A4 /* NoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteManager.swift; sourceTree = "<group>"; };
 		74A8282823F94B1D0052D7B0 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		74C683AA23FF62790085D0E2 /* JSTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSTextView.swift; sourceTree = "<group>"; };
+		74C683AC23FF96800085D0E2 /* NoteImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		740A429723F9250D000E64A4 /* JSNote */ = {
 			isa = PBXGroup;
 			children = (
+				74C683A723FF5E1C0085D0E2 /* Common */,
 				740A42D123F92C2F000E64A4 /* SceneDelegate.swift */,
 				740A42D323F92C5C000E64A4 /* Note */,
 				740A42CE23F92AF9000E64A4 /* Model */,
@@ -174,8 +179,17 @@
 			isa = PBXGroup;
 			children = (
 				740A42D423F92C7A000E64A4 /* NoteViewController.swift */,
+				74C683AC23FF96800085D0E2 /* NoteImageCell.swift */,
 			);
 			path = Note;
+			sourceTree = "<group>";
+		};
+		74C683A723FF5E1C0085D0E2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				74C683AA23FF62790085D0E2 /* JSTextView.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,11 +325,13 @@
 			files = (
 				740A42D523F92C7A000E64A4 /* NoteViewController.swift in Sources */,
 				740A42D723F92CAE000E64A4 /* NoteListViewController.swift in Sources */,
+				74C683AB23FF62790085D0E2 /* JSTextView.swift in Sources */,
 				740A42D023F92B05000E64A4 /* JSNote.swift in Sources */,
 				740A42CA23F925CC000E64A4 /* UIView.swift in Sources */,
 				740A429923F9250D000E64A4 /* AppDelegate.swift in Sources */,
 				740A42DB23F92DBF000E64A4 /* NoteManager.swift in Sources */,
 				74A8282923F94B1D0052D7B0 /* CALayer.swift in Sources */,
+				74C683AD23FF96800085D0E2 /* NoteImageCell.swift in Sources */,
 				740A42CD23F92A81000E64A4 /* NoteListCell.swift in Sources */,
 				740A42D223F92C2F000E64A4 /* SceneDelegate.swift in Sources */,
 			);
